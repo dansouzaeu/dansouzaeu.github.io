@@ -1,137 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Aula HTML 5</title>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="tags,css,html5" />
-        <meta name="description" contente="Aulas de HTML5 com CSS" />
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    </head>
-    <body>
-        <header><h1>Daniel Souza dos Santos</h1></header>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Artigos</li>
-                <li>Tabela</li>
-            </ul>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essa é minha Apresentação desenvolvida em HTML">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>@dansouzaeu - Apresentação em HTML</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem"src="imagens/profile-pic.png" alt="Foto de perfil de Daniel" />
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="https://linkedin.com/in/dansouzaeu" target="_blank">LinkedIn</a>
+            <a class="cabecalho-menu-item" href="https://wa.me/5511960800223" target="_blank">WhatsApp</a>
+            <a class="cabecalho-menu-item" href="docs/Daniel Souza.pdf" target="_blank" download>Curriculo em PDF</a>
         </nav>
-        <section>
-            <header><h1>Formulário</h1></header>
-            <form method="get" action="">
-                Nome: <input type="text" placeholder="Digite aqui seu nome" required><br />
-                E-mail: <input type="email" placeholder="Digite um e-mail válido" required><br />
-                Quant. de dependentes: <input type="number" min="0" max="10"><br />
-                CEP: <input type="text" required pattern="[0-9]{8}" placeholder="Digite apenas números"><br />
-                Deseja receber novidades?<br />
-                Sim <input type="radio" name="novidades" value="sim" checked>
-                Não <input type="radio" name="novidades" value="nao">
-                <button>Confirmar</button>
-            </form>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Daniel Souza dos Santos</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Esse é meu primeiro projeto em HTML - Uma LandingPage</h2>
+                <button class="conteudo-principal-botao" ><a href="https://github.com/dansouzaeu" target="_blank">GitHub</a></button>
+            </div>
+            <img class="conteudo-principal-imagem" src="imagens/profile-pic (1).png" alt="Imagem de perfil com estilização" />
         </section>
-        <section>
-            <article>
-                <header>
-                    <h2>Aulas de HTML5 e CSS</h2>
-                </header>
-                <p>Esse é meu primeiro código de HTML na Impacta.</p>
-                <hr />
-                <p>
-                    <div itemscope itemtype="http://schema.org/Person">
-                        <span itemprop="name"><h4>Daniel Souza dos Santos</h4></span>
-                        <span itemprop="jobTitle"><h6>Consultor de Dados</h6></span>
-                    </div>
-                </p>
-                <p><a href="docs/rbrasil-logo.zip">Link para Download</a></p>
-            </article>
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-escrito">Minhas principais Skills</h3>
+            <p class="conteudo-secundario-paragrafo">SQL Server Management Studio</p>
+            <p class="conteudo-secundario-paragrafo">Pyhton</p>
+            <p class="conteudo-secundario-paragrafo">HTML5</p>
+            <p class="conteudo-secundario-paragrafo">CSS3</p>
         </section>
-        <hr />
-        <section>
-            <article>
-                <header><h1>Anexando imagens</h1></header>
-                    <h2>Imagem anexada</h2>
-                        <p><h3>Banner</h3>
-                            <img src="imagens/banner.jpg" width="250" />
-                        </p>
-                        <p><h3>RBrasil</h3>
-                            <img src="imagens/rbrasil-logo.png" width="250" />
-                        </p>
-            </article>
-            <article>
-                <header><h1>Links</h1></header>
-                    <h2>Tipos de vinculos</h2>
-                    <p>
-                        <a href="https://www.google.com.br" target="_blank"> Google </a>
-                    </p>
-                <hr />
-                    <p>
-                        <h2>Link para contato</h2>
-                        <a href="mailto:contato@impacta.com.br&subject=Aulas de HTML5&cc=daniel.ssantos@rbrasil.com.br">
-                            Clique aqui
-                        </a>
-                    </p>
-            </article>
-        </section>
-        <hr />
-        <section>
-            <header><h1>Listas</h1></header>
-            <p>
-                <h2>Listas Ordenadas</h2>
-                <ol start="1">
-                    <li>Daniel</li>
-                    <li>Rafael</li>
-                    <li>Sonia</li>
-                    <li>Reginaldo</li>
-                </ol>
-            </p>
-            <p>
-                <h2>Listas Não Ordenadas</h2>
-                <ul type="circle">
-                    <li>Daniel</li>
-                    <li>Rafael</li>
-                    <li>Sonia</li>
-                    <li>Reginaldo</li>
-                </ul>
-            </p>
-            <p>
-                <h2>Listas de Definição</h2>
-                <dl>
-                    <dt>Daniel</dt>
-                    <dd>Tarefa 1</dd>
-                    <dd>Tarefa 2</dd>
-                </dl>
-            </p>
-        </section>
-        <hr />
-        <section>
-            <header><h1>Tabelas</h1></header>
-            <p>
-                <h2>Informações</h2>
-                <table border="1">
-                    <thead>
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Valor</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Daniel Souza dos Santos</td>
-                            <td>432.311.888-06</td>
-                            <td>R$420,25</td>
-                        </tr>
-                        <tr>
-                            <td>Sonia Maria Alves</td>
-                            <td>063.342.068-93</td>
-                            <td>R$720,22</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </p>
-        </section>
-        <aside><!-- Publicidade --></aside>
-        <footer>
-            Daniel Souza dos Santos - &copy 2023 todos os direitos reservados.
-        </footer>
-    </body>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-paragrafo">&copy Todos os direitos Reservados</p>
+    </footer>
+
+</body>
 </html>
