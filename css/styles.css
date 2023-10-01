@@ -86,6 +86,11 @@ body {
     font-size: 24px;
 }
 
+.conteudo-principal-botao a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .conteudo-principal-imagem {
     height: 300px;
 }
