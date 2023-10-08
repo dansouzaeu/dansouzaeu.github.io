@@ -12,3 +12,8 @@ Na versão anterior o botão para direcionar o usuário final estava com uma cor
 Repositório migrado para o dansouzaeu.github.io
 
 Esse repositório contém informações de contatos pessoais e poderá ser clonado para utilização própria.
+
+# Atualização v2
+
+Nessa versão utilizei a macro CSS @media screen para fazer uma versão compativel com dispositivos móveis.
+Feito a responsividade e sobrescrição do código, mantendo o layout desktop como inicialmente.
