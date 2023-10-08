@@ -14,21 +14,19 @@ body {
 
 .cabecalho {
   display: flex;
-  flex-direction: column; /* Mudança para empilhar em dispositivos móveis */
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   padding: 24px;
-  text-align: center; /* Centralizar texto em dispositivos móveis */
 }
 
 .cabecalho-imagem {
   height: 72px;
-  margin-bottom: 20px; /* Espaço entre a imagem e o menu em dispositivos móveis */
 }
 
 .cabecalho-menu {
   display: flex;
-  flex-direction: column; /* Empilhar itens do menu em dispositivos móveis */
-  gap: 16px; /* Espaçamento entre itens do menu em dispositivos móveis */
+  gap: 32px;
 }
 
 .cabecalho-menu-item {
@@ -38,27 +36,23 @@ body {
   font-size: 18px;
 }
 
-/* Adicionar uma media query para dispositivos móveis */
-@media screen and (max-width: 768px) {
-  .conteudo-principal {
-    flex-direction: column; /* Empilhar elementos principais em dispositivos móveis */
-    text-align: center; /* Centralizar texto em dispositivos móveis */
-  }
+.conteudo {
+  border-top: 0.4px solid #246b62;
+  margin-bottom: 48px;
+}
 
-  .conteudo-principal-escrito-titulo {
-    font-size: 36px; /* Reduzir o tamanho do título em dispositivos móveis */
-  }
-
-  .conteudo-principal-escrito-subtitulo {
-    font-size: 18px; /* Reduzir o tamanho do subtitulo em dispositivos móveis */
-  }
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
 }
 
 .conteudo-principal-escrito {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  text-align: center; /* Centralizar texto em dispositivos móveis */
 }
 
 .conteudo-principal-escrito-titulo {
@@ -74,7 +68,6 @@ body {
   font-weight: 400;
   font-size: 24px;
 }
-
 .conteudo-principal-botao:hover {
   background-color: rgba(236, 214, 196, 0.53);
   color: #ffffff;
